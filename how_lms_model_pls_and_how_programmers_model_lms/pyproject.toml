@@ -1,0 +1,23 @@
+[project]
+name = "jane-street"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "abstractions>=0.6.1",
+    "altair>=5.5.0",
+    "bounded-subprocess>=2.3.1",
+    "datasets>=4.3.0",
+    "dspy>=3.0.3",
+    "marimo>=0.17.6",
+    "more-nnsight",
+    "prl-ml",
+    "scikit-learn>=1.7.2",
+    "torch>=2.8.0",
+    "transformers>=4.57.1",
+]
+
+[tool.uv.sources]
+prl-ml = { path = "../../prl_ml", editable = true }
+more-nnsight = { path = "../../more_nnsight", editable = true }
